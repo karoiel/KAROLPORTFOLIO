@@ -57,7 +57,7 @@ img { display: block; max-width: 100%; }
 .hero__title em, .about__statement em, .contact__main em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.11em; }
 .hero__side { display: grid; grid-template-columns: 1fr auto; grid-column: 10 / -1; align-items: end; gap: 1rem; margin-top: 1rem; }
 .hero__side p, .hero__footer p { margin: 0; font: 11px/1.3 var(--mono); text-transform: uppercase; }
-.circle-link { display: grid; place-items: center; width: 3.3rem; aspect-ratio: 1; border: 1px solid var(--ink); border-radius: 50%; font-size: 1.3rem; transition: background .25s, color .25s, transform .25s; }
+.circle-link { display: grid; place-items: center; width: 2.3rem; aspect-ratio: 1; border: 1px solid var(--ink); border-radius: 50%; font-size: 1.3rem; transition: background .25s, color .25s, transform .25s; }
 .circle-link:hover { color: var(--paper); background: var(--ink); transform: translateY(.2rem); }
 .hero__footer { display: flex; justify-content: space-between; grid-column: 1 / -1; padding-top: 1rem; border-top: 1px solid var(--line); }
 

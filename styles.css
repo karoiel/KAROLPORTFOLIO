@@ -107,9 +107,9 @@ img { display: block; max-width: 100%; }
 .site-footer p { margin: 0; }
 .site-footer a { border-bottom: 1px solid currentColor; }
 
-.cursor-preview { position: fixed; z-index: 18; width: clamp(11rem, 18vw, 17rem); pointer-events: none; opacity: 0; transform: translate3d(-50%, -50%, 0) scale(.92); transition: opacity .2s, transform .3s cubic-bezier(.2,.8,.2,1); mix-blend-mode: normal; }
+.cursor-preview { --preview-size: clamp(11rem, 18vw, 17rem); position: fixed; z-index: 18; width: var(--preview-size); pointer-events: none; opacity: 0; transform: translate3d(-50%, -50%, 0) scale(.92); transition: opacity .2s, transform .3s cubic-bezier(.2,.8,.2,1); mix-blend-mode: normal; }
 .cursor-preview.is-visible { opacity: 1; transform: translate3d(-50%, -50%, 0) scale(1); }
-.cursor-preview img { width: 100%; border: 1px solid var(--ink); background: var(--pale); }
+.cursor-preview img { width: var(--preview-size); height: var(--preview-size); border: 1px solid var(--ink); border-radius: 50%; background: var(--pale); object-fit: cover; }
 .cursor-preview span { display: block; margin-top: .45rem; font: 10px var(--mono); }
 
 .project-view { min-height: 100svh; padding-top: 5rem; }
